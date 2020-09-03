@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+
+    <head>
+        <title>Stream</title>
+    </head>
+<body style="text-align: center; padding: 20pt;">
+
+        
+        <h2>
+        We will present you the list again. 
+        </h2>
+        &nbsp
+        <h2>Press <a id="button"> here</a> to continue</h2>
+
+</body>
+
+<script>
+
+const trial = parseInt(new URLSearchParams(window.location.search).get("trial"))
+document.getElementById("button").href = (trial < 5 ? "StreamingExperimentFinal.html?trial=" + (trial + 1) : "Questionaire.html")
+
+</script>
+
+</html> 
